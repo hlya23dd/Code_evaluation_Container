@@ -35,12 +35,13 @@ The following parameters need to be fed by hand:
  - model_ensemble_size for grid_search.py, number of models trained for each feature combination, I used the value of 100, the default value is 30 for a fast run 
 
 Directory structure:
-./feature_generation/: temporary directory used for feature generation
-./CSVs/: directory for .csv input files
-./geberate_solutions/: codes for generating solution files 
-./features/: directory used to store features of train segments
-./solutions/: place for solution files
+./feature_generation/: for feature generation
+./CSVs/: for .csv input files
+./features/: for features of train segments
+./solutions/: for solution files
 
 
 
  
+
+
