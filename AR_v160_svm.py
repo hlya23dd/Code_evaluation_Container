@@ -208,9 +208,9 @@ def feature_train_valid_test_split_index(my_feature,my_label,PA):  # for kaggle2
 
 def feature_NaN(my_feature,dim_feature):
 
-  from sklearn.preprocessing.imputation import Imputer
+  from sklearn.impute import SimpleImputer
   dim_feature=my_feature.shape[1]
-  imp = Imputer(missing_values=np.nan, strategy='mean')
+  imp = SimpleImputer(missing_values=np.nan, strategy='mean')
   correction_array=[0]*2*dim_feature
   correction_array=np.asarray(correction_array).reshape(2,dim_feature)
   imp.fit(correction_array) 
@@ -221,9 +221,9 @@ def feature_NaN(my_feature,dim_feature):
 
 def feature_inf(my_feature,dim_feature):
 
-  from sklearn.preprocessing.imputation import Imputer
+  from sklearn.impute import SimpleImputer
   dim_feature=my_feature.shape[1]
-  imp = Imputer(missing_values=np.inf, strategy='mean')
+  imp = SimpleImputer(missing_values=np.inf, strategy='mean')
   correction_array=[0]*2*dim_feature
   correction_array=np.asarray(correction_array).reshape(2,dim_feature)
   imp.fit(correction_array) 
