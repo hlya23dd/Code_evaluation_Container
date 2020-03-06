@@ -152,8 +152,8 @@ def feature_b_reshape(fea,n_channel):
 
 
 def feature_train_test_split(my_feature, my_label, patient_index=1, segment_length_minutes=10, split_time=None, n_train=None):
-  print(n_train)
-  my_feature, my_label = shuffle(my_feature, my_label, random_state=0)
+  #print(n_train)
+  #my_feature, my_label = shuffle(my_feature, my_label, random_state=0)
   n10=int(4*segment_length_minutes)
   if split_time is None and n_train is None:
      n_sample=len(my_label)
