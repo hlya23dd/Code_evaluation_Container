@@ -7,6 +7,9 @@ export DATA_DIR=""
 export CSV_DIR=""
 
 ####################################################################
+recipe file for building a singularity container image: Singularity.fea
+uri: hlya23dd/Code_evaluation_Container:fea
+####################################################################
 Our feature-based seizure prediction method runs in 3 basic steps:
 Step 1: generate univariate and mutivariate features for train segments and store them in files. 
 Step 2: grid search of optimal feature combination for each patient, find the best model via validation on a subset of train segments 
